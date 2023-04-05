@@ -1,0 +1,94 @@
+.container {
+  scroll-snap-type: y mandatory;
+  height: $screenHeight;
+  overflow-y: scroll;
+  
+}
+
+section {
+  height: $screenHeight;
+  scroll-snap-align: start;
+}
+
+@mixin figura($dato, $float) {
+  float: $float;
+  margin-bottom: 1em;
+  clip-path: inset($dato);
+}
+
+.figura1 {
+  @include figura(0px round 30px, left);
+  margin-right: 2em;
+}
+
+.figura2 {
+  @include figura(10px round 50px, right);
+  margin-left: 2em;
+}
+
+.img1 {
+  width: 100%;
+  max-width: 300px;
+}
+
+
+// csstricks snap
+
+
+
+.textolargo {
+  visibility: visible;
+}
+
+@mixin seccion($fondo) {
+  background-image: url($fondo);
+  background-position: center;
+  background-size: cover;
+}
+
+.container__seccion0 {
+  @include seccion("../images/fondo0.jpg");
+}
+
+.container__seccion1 {
+  @include seccion("../images/fondo1.jpg");
+}
+
+.container__seccion2 {
+  @include seccion("../images/fondo2.jpg");
+}
+
+.container__seccion3 {
+  @include seccion("../images/fondo3.jpg");
+}
+
+.container__seccion4 {
+  @include seccion("../images/fondo4.jpg");
+}
+
+.galeria {
+  min-height: 80vh;
+}
+
+.img2 {
+  width: 100%;
+}
+
+.mapa {
+  height: 70vh;
+}
+
+@media all and (max-width: $mqMinWidth) {
+  .contenido {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .casa {
+    font-size: 2em;
+  }
+
+  .textolargo {
+    visibility: hidden;
+  }
+}

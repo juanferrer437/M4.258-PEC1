@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+
+        <title>PEC 1 - Herramientas HTML y CSS II</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="container__seccion0" id="inicio">
+                <header>
+                    <include src="./views/navbar.html"></include>
+                </header>
+                <main>
+                <include src="./views/home.html"></include>
+                </main>
+                <include src="./views/footer.html"></include>
+            </section>
+
+            <section class="container__seccion1" id="historia">
+                <header>
+                    <include src="./views/navbar.html"></include>
+                </header>
+
+                <include src="./views/historia.html"></include>
+            </section>
+
+            <section class="container__seccion2" id="castillo">
+                <header>
+                    <include src="./views/navbar.html"></include>
+                </header>
+
+                <include src="./views/castillo.html"></include>
+            </section>
+
+            <section class="container__seccion3" id="galeria">
+                <header>
+                    <include src="./views/navbar.html"></include>
+                </header>
+
+                <include src="./views/galeria.html"></include>
+            </section>
+
+            <section class="container__seccion4" id="llegar">
+                <header>
+                    <include src="./views/navbar.html"></include>
+                </header>
+
+                <include src="./views/llegar.html"></include>
+            </section>
+        </div>
+
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <script
+            type="module"
+            src="https://kit.fontawesome.com/5d5e3a0168.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="module"
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script type="module" src="./assets/scripts/jquery.js"></script>
+    </body>
+</html>

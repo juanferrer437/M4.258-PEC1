@@ -1,0 +1,54 @@
+nav {
+  background-color: black;
+  border-bottom: 2px solid orange;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90%;
+  padding: 10px;
+ 
+  margin: auto;
+  font-weight: bolder;
+}
+
+.menu__item {
+  display: none;
+  order: 3;
+
+  width: 100%;
+  text-align: center;
+   
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.menu__item--active {
+  display: block;
+}
+
+.menu__item--toggle {
+  order: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media all and (min-width: $mqMinWidth) {
+  .menu__item {
+    display: block;
+    order: 1;
+    width: auto;
+    
+  }
+  .menu__item--toggle {
+    display: none;
+  }
+}

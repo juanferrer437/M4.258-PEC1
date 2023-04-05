@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin contenedor($color, $ancho-porcentaje) {
+    /* Box-model */
+  width: $ancho-porcentaje;
+ max-width: 1000px;
+  padding: 2rem;
+  margin: 4em auto;
+
+  /* Typography */
+  text-align: justify;
+  
+  background-color: $color;
+  border-radius: 2rem;
+}
+
+.uoc-container {
+  @include contenedor(white, 80%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.uoc-container2 {
+  @include contenedor(white, 90%);
+  border-radius: 2rem;
+}
+
+.uoc-container3 {
+  @include contenedor(transparent, 80%);
+
+}
+
+.uoc-logo {
+  /* Box-model */
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+
+}
+
+.uoc-title {
+    /* Typography */
+  font-family: $font-family-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $uoc-corporate;
+}
+
+.uoc-footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 40px;
+  margin-top: 1.5rem;
+
+  /* Typography */
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-top: 2px solid orange;
+}
+
+@media all and (max-width: $mqMinWidth) {
+  @mixin contenedor2($color) {
+    width: 100%;
+    padding: 0.5em 2em;
+    margin: 0;
+    background-color: $color;
+    border-radius: 0;
+
+
+  }
+
+  .uoc-container {
+    @include contenedor2(white);
+  }
+
+  .uoc-container2 {
+    @include contenedor2(white);
+  }
+
+  .uoc-container3 {
+    @include contenedor2(transparent);
+  }
+}
