@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/juanferrer437/M4.258-PEC1.git"
   },
   "author": {
     "name": "Juan Ferrer",
@@ -32,9 +32,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/juanferrer437/M4.258-PEC1/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/juanferrer437/M4.258-PEC1#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "autoprefixer": "^10.4.13",
