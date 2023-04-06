@@ -3,14 +3,11 @@
  * see commented examples below
  */
 
+import "@fortawesome/fontawesome-free/js/all";
 import "cookieconsent";
 
 import { getSlider } from 'simple-slider';
  
-
-  
-
-
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 

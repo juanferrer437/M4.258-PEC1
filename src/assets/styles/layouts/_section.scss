@@ -2,12 +2,6 @@
   scroll-snap-type: y mandatory;
   height: $screenHeight;
   overflow-y: scroll;
-  
-}
-
-section {
-  height: $screenHeight;
-  scroll-snap-align: start;
 }
 
 @mixin figura($dato, $float) {
@@ -31,16 +25,14 @@ section {
   max-width: 300px;
 }
 
-
-// csstricks snap
-
-
-
 .textolargo {
   visibility: visible;
 }
 
 @mixin seccion($fondo) {
+  height: $screenHeight;
+  scroll-snap-align: start;
+
   background-image: url($fondo);
   background-position: center;
   background-size: cover;
@@ -90,5 +82,14 @@ section {
 
   .textolargo {
     visibility: hidden;
+  }
+
+  .figura1 {
+    @include figura(0px, left);
+    margin-right: 0.5em;
+  }
+  .figura2 {
+    @include figura(0px, right);
+    margin-left: 0.5em;
   }
 }

@@ -3,8 +3,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   font-family: $font-family-sans-serif;
   font-size: 16px;
@@ -16,7 +14,7 @@ body {
   width: $ancho-porcentaje;
  max-width: 1000px;
   padding: 2rem;
-  margin: 4em auto;
+  margin: 1em auto;
 
   /* Typography */
   text-align: justify;
