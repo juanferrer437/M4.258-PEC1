@@ -76,6 +76,7 @@
     margin: 0;
     font-size: 1.2em;
   }
+
   .casa {
     font-size: 2em;
   }
@@ -84,12 +85,19 @@
     visibility: hidden;
   }
 
+  @mixin figuraRes() {
+    float: none;
+    margin-bottom: 1em;
+    clip-path: inset(0px);
+  }
+
   .figura1 {
-    @include figura(0px, left);
+    @include figuraRes();
     margin-right: 0.5em;
   }
+
   .figura2 {
-    @include figura(0px, right);
+    @include figuraRes();
     margin-left: 0.5em;
   }
 }
