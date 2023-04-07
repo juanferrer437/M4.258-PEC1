@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -41,3 +42,48 @@ a {
     display: none;
   }
 }
+=======
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 10px 3em;
+  margin: auto;
+  font-weight: bolder;
+
+  background-color: black;
+  border-bottom: 2px solid orange;
+}
+.menu__item {
+  display: none;
+
+  width: 100%;
+  text-align: center;
+
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.menu__item--active {
+  display: block;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media all and (min-width: $mqMinWidth) {
+  .menu__item {
+    display: block;
+    order: 1;
+    width: auto;
+  }
+  .menu__item--toggle {
+    display: none;
+  }
+}
+>>>>>>> 3cce238d95b7def847e0cf2d08192962f720249b

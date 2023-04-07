@@ -24,7 +24,11 @@ body {
   @include contenedor(white, 80%);
   border-radius: 20px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+<<<<<<< HEAD
     0 2px 4px -1px rgba(0, 0, 0, .06);
+=======
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+>>>>>>> 3cce238d95b7def847e0cf2d08192962f720249b
     
 }
 
@@ -55,7 +59,11 @@ body {
 @media all and (max-width: $mqMinWidth) {
   @mixin contenedor2($color) {
     width: 100%;
+<<<<<<< HEAD
     padding: .5em;
+=======
+    padding: 0.5em;
+>>>>>>> 3cce238d95b7def847e0cf2d08192962f720249b
     margin:0;
     background-color: $color;
     border-radius: 0;
